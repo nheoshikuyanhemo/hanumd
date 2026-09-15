@@ -1,0 +1,256 @@
+/* Responsive rules */
+@media (max-width: 1024px) {
+    :root {
+        --nav-height: 66px;
+        --gutter: 2rem;
+        --section-space: 5rem;
+    }
+
+    .nav-container {
+        gap: 1.2rem;
+    }
+
+    .nav-links {
+        gap: 1.4rem;
+    }
+
+    .hero {
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr);
+        gap: 3rem;
+    }
+
+    .split-section,
+    .project-card {
+        gap: 3rem;
+    }
+
+    .contact-inner {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        --nav-height: 62px;
+        --gutter: 1.25rem;
+        --section-space: 4rem;
+    }
+
+    .nav-container {
+        padding: 0 1.25rem;
+        gap: 0.9rem;
+    }
+
+    .logo-img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .nav-links {
+        gap: 0.85rem;
+    }
+
+    .nav-links a {
+        font-size: 0.68rem;
+        letter-spacing: 0.07em;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 4rem var(--gutter) 5rem;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .hero-content {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .hero-visual {
+        width: min(100%, 360px);
+        justify-self: center;
+    }
+
+    .hero-links {
+        justify-content: center;
+    }
+
+    .split-section,
+    .project-card {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: var(--section-space) var(--gutter);
+    }
+
+    .split-section.split-reverse .split-media,
+    .project-card.project-reverse .project-media {
+        order: 0;
+    }
+
+    .split-media,
+    .project-media {
+        width: min(100%, 520px);
+        margin: 0 auto;
+    }
+
+    .split-copy,
+    .project-info {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .page-header {
+        min-height: 48vh;
+        padding: 4rem var(--gutter);
+    }
+
+    .about-section,
+    .projects-page,
+    .contact-page {
+        padding-right: var(--gutter);
+        padding-left: var(--gutter);
+    }
+
+    .contact-page {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .contact-inner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .contact-title {
+        max-width: 520px;
+    }
+
+    .contact-list {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 520px) {
+    :root {
+        --nav-height: 58px;
+        --gutter: 1rem;
+        --section-space: 3.25rem;
+    }
+
+    .nav-container {
+        padding: 0 1rem;
+        gap: 0.65rem;
+    }
+
+    .logo-img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .nav-links {
+        gap: 0.62rem;
+    }
+
+    .nav-links a {
+        font-size: 0.62rem;
+    }
+
+    .nav-links a::after {
+        bottom: -6px;
+    }
+
+    .hero {
+        padding-top: 3.5rem;
+        padding-bottom: 4rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.4rem, 13vw, 3.7rem);
+    }
+
+    .hero-role {
+        font-size: 0.7rem;
+    }
+
+    .hero-description {
+        font-size: 0.96rem;
+        line-height: 1.75;
+    }
+
+    .hero-links {
+        gap: 0.55rem 0.85rem;
+    }
+
+    .hero-links a {
+        font-size: 0.72rem;
+    }
+
+    .hero-visual {
+        width: min(100%, 290px);
+    }
+
+    .split-section,
+    .project-card {
+        padding-top: var(--section-space);
+        padding-bottom: var(--section-space);
+    }
+
+    .split-media,
+    .project-media {
+        aspect-ratio: 1;
+        padding: 1rem;
+    }
+
+    .section-tag {
+        font-size: 0.64rem;
+    }
+
+    .split-title,
+    .project-info h2 {
+        font-size: 1.65rem;
+    }
+
+    .split-text,
+    .project-description {
+        font-size: 0.92rem;
+        line-height: 1.75;
+    }
+
+    .page-title {
+        font-size: 2.45rem;
+    }
+
+    .quote-section {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .quote {
+        font-size: 1.55rem;
+    }
+
+    .contact-title {
+        font-size: 2.7rem;
+    }
+
+    .social-link {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-content {
+        gap: 0.8rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal-block,
+    .reveal-item,
+    .typewriter {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}

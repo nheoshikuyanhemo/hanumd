@@ -1,0 +1,17 @@
+:root {
+    --bg: #0b0b0f;
+    --surface: #131318;
+    --surface-2: #181820;
+    --text: #c9c9d2;
+    --text-bright: #f4f1ea;
+    --muted: #9b9ba6;
+    --accent: #d4a574;
+    --accent-soft: rgba(212, 165, 116, 0.14);
+    --border: #292931;
+    --nav-bg: rgba(11, 11, 15, 0.94);
+    --nav-height: 72px;
+    --content: 1180px;
+    --gutter: clamp(1.25rem, 5vw, 4rem);
+    --section-space: clamp(4rem, 8vw, 7rem);
+    --transition: 240ms ease;
+}
