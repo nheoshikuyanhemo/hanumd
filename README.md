@@ -1,11 +1,11 @@
-# Hanum Portfolio
+# Hanumd Portfolio
 
 Minimalist Web3 community contributor portfolio.
 
 ## Structure
 
 ```
-hanum/
+hanumd/
 ├── index.html              # Main page (Home)
 ├── about.html              # About me
 ├── projects.html           # Projects list
