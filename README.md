@@ -39,7 +39,7 @@ hanumd/
 ## How to Run
 
 ```bash
-cd hanum
+cd hanumd
 python3 -m http.server 12345
 ```
 
