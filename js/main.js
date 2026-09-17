@@ -1,4 +1,4 @@
-/* Hanum portfolio — Pante-style typewriter and reveal engine */
+/* Hanum portfolio — Pante-style typewriter and reveal engine + menu toggle */
 document.addEventListener('DOMContentLoaded', function() {
     'use strict';
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         element.dataset.typed = '1';
         const text = element.dataset.type || element.textContent;
         const requestedSpeed = Number.parseInt(element.dataset.speed, 10) || 30;
-        const speed = Math.min(requestedSpeed, 20);
+        const speed = Math.min(requestedSpeed, 8);
         typeWriter(element, text, speed);
     }
 
@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
             openTextElement(element);
             const text = element.dataset.type || '';
             const requestedSpeed = Number.parseInt(element.dataset.speed, 10) || 30;
-            const speed = Math.min(requestedSpeed, 20);
-            const estimate = text.length * speed + 150;
+            const speed = Math.min(requestedSpeed, 8);
+            const estimate = text.length * speed + 80;
             window.setTimeout(next, estimate);
         }
 
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         block.querySelectorAll('.reveal-item').forEach(function(item, index) {
             window.setTimeout(function() {
                 item.classList.add('visible');
-            }, 150 + index * 100);
+            }, 80 + index * 60);
         });
     }
 
@@ -117,6 +117,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('load', reserveTypewriterSpace);
     window.addEventListener('resize', reserveTypewriterSpace);
+
+    /* Menu toggle (Pante-style hamburger overlay) */
+    const menuTrigger = document.getElementById('menuTrigger');
+    const menuPanel = document.getElementById('menuPanel');
+    const menuBackdrop = document.getElementById('menuBackdrop');
+    const menuClose = document.getElementById('menuClose');
+
+    function openMenu() {
+        if (menuTrigger) menuTrigger.classList.add('open');
+        if (menuPanel) menuPanel.classList.add('open');
+        if (menuBackdrop) menuBackdrop.classList.add('open');
+    }
+
+    function closeMenu() {
+        if (menuTrigger) menuTrigger.classList.remove('open');
+        if (menuPanel) menuPanel.classList.remove('open');
+        if (menuBackdrop) menuBackdrop.classList.remove('open');
+    }
+
+    if (menuTrigger) menuTrigger.addEventListener('click', openMenu);
+    if (menuClose) menuClose.addEventListener('click', closeMenu);
+    if (menuBackdrop) menuBackdrop.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeMenu();
+    });
+    document.querySelectorAll('.menu-contents a').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+    });
 
     /* Navigation: only hash links need custom handling. Normal page links must
        keep their default behavior so Learn More / View Portfolio / Contact work. */

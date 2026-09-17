@@ -3,49 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mega asd/ Hanumd — Web3 Community Contributor</title>
+    <title>HanumD / Mdewi — Web3 Community Contributor</title>
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- SVG icons for social media -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="logo"><img src="assets/images/profile.jpg" alt="Mega asd/ Hanumd" class="logo-img"></a>
+            <a href="index.html" class="logo"><img src="assets/images/profile.jpg" alt="HanumD / Mdewi" class="logo-img"></a>
             <ul class="nav-links">
                 <li><a href="about.html">Learn More</a></li>
                 <li><a href="projects.html">View Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button class="menu-trigger" id="menuTrigger" aria-label="Open menu">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </button>
         </div>
     </nav>
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+    <aside class="menu-panel" id="menuPanel" role="dialog" aria-label="Menu">
+        <div class="menu-panel__head">
+            <h2 class="menu-panel__title" data-i18n="menu.title">// HANUMD / MDEWI</h2>
+            <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="menu-contents">
+            <li>
+                <a href="index.html">
+                    <span class="mc-title" data-i18n="menu.home">Home</span>
+                    <span class="mc-desc" data-i18n="menu.home.desc">Landing — banner, tagline & core features.</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <span class="mc-title" data-i18n="menu.about">About</span>
+                    <span class="mc-desc" data-i18n="menu.about.desc">Vision, experience & ecosystem links.</span>
+                </a>
+            </li>
+            <li>
+                <a href="projects.html">
+                    <span class="mc-title" data-i18n="menu.projects">Projects</span>
+                    <span class="mc-desc" data-i18n="menu.projects.desc">Community experience & contributions.</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <span class="mc-title" data-i18n="menu.contact">Contact</span>
+                    <span class="mc-desc" data-i18n="menu.contact.desc">Get in touch via X, Telegram, Email, Discord.</span>
+                </a>
+            </li>
+        </ul>
+        <div class="menu-socials">
+            <span class="menu-socials__label">Social media</span>
+            <a href="https://x.com/HanumD3e" target="_blank" rel="noopener">X</a>
+            <a href="https://t.me/HanumRockerD" target="_blank" rel="noopener">Telegram</a>
+            <a href="mailto:mdewi2590@gmail.com">Email</a>
+            <a href="https://discord.com/users/your_discord_id" target="_blank" rel="noopener">Discord</a>
+            <a href="https://github.com/mdewi2590-collab" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="menu-lang-switch">
+            <select id="langSelect" aria-label="Language">
+                <option value="en">English</option>
+                <option value="id">Indonesian</option>
+            </select>
+        </div>
+    </aside>
 
     <main>
-        <section class="hero">
+        <section class="hero reveal-block">
             <div class="hero-content">
-                <p class="hero-eyebrow reveal">Welcome to</p>
-                <h1 class="hero-title reveal">Mega asd/ Hanumd</h1>
-                <p class="hero-profile-label reveal">profile</p>
-                <p class="hero-role reveal">WEB3 COMMUNITY CONTRIBUTOR</p>
-                <p class="hero-description reveal">Building communities, creating connections,<br> and contributing to Web3.</p>
-                <p class="hero-description reveal">Web3 enthusiast with experience in community hosting, Business Development, user research, and content creation. I've contributed to projects like Ablo, Optimum, and Nirvana, and I'm always looking for opportunities to support communities, engage users, and grow with the ecosystem.</p>
-                <p class="hero-links reveal"><a href="about.html">Learn More</a> | <a href="projects.html">View Portfolio</a>| <a href="contact.html">Contact</a></p>
+                <p class="hero-eyebrow reveal-item typewriter" data-type="Welcome to" data-speed="8"></p>
+                <h1 class="hero-title reveal-item typewriter" data-type="HanumD / Mdewi" data-speed="8"></h1>
+                <p class="hero-profile-label reveal-item typewriter" data-type="profile" data-speed="8"></p>
+                <p class="hero-description reveal-item typewriter" data-type="Building communities, creating connections" data-speed="8"></p>
+                <p class="hero-description reveal-item typewriter" data-type="and contributing to Web3." data-speed="8"></p>
+                <p class="hero-description reveal-item typewriter" data-type="Web3 enthusiast with experience in community hosting, Business Development, user research, and content creation. I've contributed to projects like Ablo, Optimum, and Nirvana, and I'm always looking for opportunities to support communities, engage users, and grow with the ecosystem." data-speed="8"></p>
+                <p class="hero-links reveal-item"><a href="about.html">Learn More</a> | <a href="projects.html">View Portfolio</a>| <a href="contact.html">Contact</a></p>
             </div>
-            <div class="hero-visual reveal">
-                <img src="assets/images/profile.jpg" alt="Mega asd/ Hanumd" class="hero-profile">
+            <div class="hero-visual reveal-item">
+                <img src="assets/images/profile.jpg" alt="HanumD / Mdewi" class="hero-profile">
             </div>
         </section>
 
-        <section class="split-section">
-            <div class="split-left reveal">
+        <section class="split-section reveal-block">
+            <div class="split-left reveal-item">
                 <div class="split-image">
                     <img src="assets/images/project-1.png" alt="Ablo">
                 </div>
             </div>
-            <div class="split-right">
+            <div class="split-right reveal-item">
                 <span class="section-tag">Ablo</span>
                 <h2 class="split-title">Design Class Host</h2>
                 <p class="split-text">
@@ -57,13 +107,13 @@
             </div>
         </section>
 
-        <section class="split-section split-reverse">
-            <div class="split-right reveal">
+        <section class="split-section split-reverse reveal-block">
+            <div class="split-right reveal-item">
                 <div class="split-image">
                     <img src="assets/images/project-2.png" alt="Optimum">
                 </div>
             </div>
-            <div class="split-left">
+            <div class="split-left reveal-item">
                 <span class="section-tag">Optimum</span>
                 <h2 class="split-title">Community Event Host</h2>
                 <p class="split-text">
@@ -75,13 +125,13 @@
             </div>
         </section>
 
-        <section class="split-section">
-            <div class="split-left reveal">
+        <section class="split-section reveal-block">
+            <div class="split-left reveal-item">
                 <div class="split-image">
                     <img src="assets/images/project-3.png" alt="GoDark">
                 </div>
             </div>
-            <div class="split-right">
+            <div class="split-right reveal-item">
                 <span class="section-tag">GoDark</span>
                 <h2 class="split-title">Community Contributor & Content Creator</h2>
                 <p class="split-text">
@@ -93,13 +143,13 @@
             </div>
         </section>
 
-        <section class="split-section split-reverse">
-            <div class="split-right reveal">
+        <section class="split-section split-reverse reveal-block">
+            <div class="split-right reveal-item">
                 <div class="split-image">
                     <img src="assets/images/project-4.png" alt="Simple Chain">
                 </div>
             </div>
-            <div class="split-left">
+            <div class="split-left reveal-item">
                 <span class="section-tag">Simple Chain</span>
                 <h2 class="split-title">Community Contributor & Content Creator</h2>
                 <p class="split-text">
@@ -111,13 +161,13 @@
             </div>
         </section>
 
-        <section class="split-section">
-            <div class="split-left reveal">
+        <section class="split-section reveal-block">
+            <div class="split-left reveal-item">
                 <div class="split-image">
                     <img src="assets/images/project-5.png" alt="Nirvana">
                 </div>
             </div>
-            <div class="split-right">
+            <div class="split-right reveal-item">
                 <span class="section-tag">Nirvana</span>
                 <h2 class="split-title">Business Development & Community Builder</h2>
                 <p class="split-text">
@@ -129,14 +179,28 @@
             </div>
         </section>
 
-        <section class="quote-section">
-            <p class="quote reveal">Building communities, creating connections,<br> and contributing to Web3.</p>
+        <section class="quote-section reveal-block">
+            <p class="quote reveal-item typewriter" data-type="Building communities, creating connections" data-speed="8"></p>
+            <p class="quote reveal-item typewriter" data-type="and contributing to Web3." data-speed="8"></p>
         </section>
 
-        <footer class="footer">
+        <footer class="footer reveal-block">
             <div class="footer-content">
-                <a href="https://github.com/mdewi2590-collab" class="footer-link"><i class='bx bxl-github'></i> github https://github.com/mdewi2590-collab</a>
-                <a href="https://x.com/HanumD3e" class="footer-link"><i class='bx bxl-twitter'></i> x https://x.com/HanumD3e</a>
+                <a href="https://x.com/HanumD3e" class="footer-icon" target="_blank" rel="noopener" title="X">
+                    <img src="assets/icons/x.svg" alt="X" class="footer-img">
+                </a>
+                <a href="https://t.me/HanumRockerD" class="footer-icon" target="_blank" rel="noopener" title="Telegram">
+                    <img src="assets/icons/telegram.svg" alt="Telegram" class="footer-img">
+                </a>
+                <a href="mailto:mdewi2590@gmail.com" class="footer-icon" title="Email">
+                    <img src="assets/icons/gmail.svg" alt="Email" class="footer-img">
+                </a>
+                <a href="https://discord.com/users/your_discord_id" class="footer-icon" target="_blank" rel="noopener" title="Discord">
+                    <img src="assets/icons/discord.svg" alt="Discord" class="footer-img">
+                </a>
+                <a href="https://github.com/mdewi2590-collab" class="footer-icon" target="_blank" rel="noopener" title="GitHub">
+                    <img src="assets/logos/github-logo/GitHub Logos/SVG/GitHub_Invertocat_White.svg" alt="GitHub" class="footer-img">
+                </a>
             </div>
         </footer>
     </main>

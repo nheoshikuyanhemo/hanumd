@@ -12,88 +12,153 @@
 <body>
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="logo"><img src="assets/images/profile.jpg" alt="Mega asd/ Hanumd" class="logo-img"></a>
+            <a href="index.html" class="logo"><img src="assets/images/profile.jpg" alt="HanumD / Mdewi" class="logo-img"></a>
             <ul class="nav-links">
                 <li><a href="about.html">Learn More</a></li>
                 <li><a href="projects.html">View Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button class="menu-trigger" id="menuTrigger" aria-label="Open menu">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </button>
         </div>
     </nav>
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+    <aside class="menu-panel" id="menuPanel" role="dialog" aria-label="Menu">
+        <div class="menu-panel__head">
+            <h2 class="menu-panel__title" data-i18n="menu.title">// HANUMD / MDEWI</h2>
+            <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="menu-contents">
+            <li>
+                <a href="index.html">
+                    <span class="mc-title" data-i18n="menu.home">Home</span>
+                    <span class="mc-desc" data-i18n="menu.home.desc">Landing — banner, tagline & core features.</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <span class="mc-title" data-i18n="menu.about">About</span>
+                    <span class="mc-desc" data-i18n="menu.about.desc">Vision, experience & ecosystem links.</span>
+                </a>
+            </li>
+            <li>
+                <a href="projects.html">
+                    <span class="mc-title" data-i18n="menu.projects">Projects</span>
+                    <span class="mc-desc" data-i18n="menu.projects.desc">Community experience & contributions.</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <span class="mc-title" data-i18n="menu.contact">Contact</span>
+                    <span class="mc-desc" data-i18n="menu.contact.desc">Get in touch via X, Telegram, Email, Discord.</span>
+                </a>
+            </li>
+        </ul>
+        <div class="menu-socials">
+            <span class="menu-socials__label">Social media</span>
+            <a href="https://x.com/HanumD3e" target="_blank" rel="noopener">X</a>
+            <a href="https://t.me/HanumRockerD" target="_blank" rel="noopener">Telegram</a>
+            <a href="mailto:mdewi2590@gmail.com">Email</a>
+            <a href="https://discord.com/users/your_discord_id" target="_blank" rel="noopener">Discord</a>
+            <a href="https://github.com/mdewi2590-collab" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="menu-lang-switch">
+            <select id="langSelect" aria-label="Language">
+                <option value="en">English</option>
+                <option value="id">Indonesian</option>
+            </select>
+        </div>
+    </aside>
 
     <main>
-        <section class="page-header">
+        <section class="page-header reveal-block">
             <div class="container">
-                <p class="section-tag reveal">Explore my work</p>
-                <h1 class="page-title reveal">COMMUNITY EXPERIENCE</h1>
+                <p class="section-tag reveal-item typewriter" data-type="Explore my work" data-speed="8"></p>
+                <h1 class="page-title reveal-item typewriter" data-type="COMMUNITY EXPERIENCE" data-speed="8"></h1>
             </div>
         </section>
 
-        <section class="projects-page">
+        <section class="projects-page reveal-block">
             <div class="container">
                 <div class="project-list">
-                    <article class="project-card reveal" id="ablo">
+                    <article class="project-card reveal-item" id="ablo">
                         <div class="project-image">
                             <img src="assets/images/project-1.png" alt="Ablo">
                         </div>
                         <div class="project-info">
-                            <h2>Ablo</h2>
+                            <h2 class="typewriter" data-type="Ablo" data-speed="8"></h2>
                             <p class="project-role">Design Class Host</p>
-                            <p class="project-description">Hosted online design classes for community members.<br>Shared practical design knowledge and best practices.<br>Supported creator engagement through educational sessions.</p>
+                            <p class="project-description typewriter" data-type="Hosted online design classes for community members. Shared practical design knowledge and best practices. Supported creator engagement through educational sessions." data-speed="8"></p>
                         </div>
                     </article>
 
-                    <article class="project-card project-reverse reveal" id="optimum">
+                    <article class="project-card project-reverse reveal-item" id="optimum">
                         <div class="project-info">
-                            <h2>Optimum</h2>
+                            <h2 class="typewriter" data-type="Optimum" data-speed="8"></h2>
                             <p class="project-role">Community Event Host</p>
-                            <p class="project-description">Hosted community events to increase engagement within the Optimum ecosystem local and global events.<br>Facilitated discussions and supported onboarding for new community members.<br>Helped strengthen community interaction through educational activities.</p>
+                            <p class="project-description typewriter" data-type="Hosted community events to increase engagement within the Optimum ecosystem local and global events. Facilitated discussions and supported onboarding for new community members. Helped strengthen community interaction through educational activities." data-speed="8"></p>
                         </div>
                         <div class="project-image">
                             <img src="assets/images/project-2.png" alt="Optimum">
                         </div>
                     </article>
 
-                    <article class="project-card reveal" id="godark">
+                    <article class="project-card reveal-item" id="godark">
                         <div class="project-image">
                             <img src="assets/images/project-3.png" alt="GoDark">
                         </div>
                         <div class="project-info">
-                            <h2>GoDark</h2>
-                            <p class="project-role">Community Contributor &amp; Content Creator</p>
-                            <p class="project-description">Created and shared educational content to increase awareness about privacy and on-chain trading.<br>Engaged with community members through discussions, Q&amp;A, and feedback collection.<br>Helped onboard new members by explaining project concepts and guiding them with useful resources.</p>
+                            <h2 class="typewriter" data-type="GoDark" data-speed="8"></h2>
+                            <p class="project-role">Community Contributor & Content Creator</p>
+                            <p class="project-description typewriter" data-type="Created and shared educational content to increase awareness about privacy and on-chain trading. Engaged with community members through discussions, Q&A, and feedback collection. Helped onboard new members by explaining project concepts and guiding them with useful resources." data-speed="8"></p>
                         </div>
                     </article>
 
-                    <article class="project-card project-reverse reveal" id="simplechain">
+                    <article class="project-card project-reverse reveal-item" id="simplechain">
                         <div class="project-info">
-                            <h2>Simple Chain</h2>
-                            <p class="project-role">Community Contributor &amp; Content Creator</p>
-                            <p class="project-description">Researched and created educational content about Real World Assets (RWA) and SimpleChain’s ecosystem.<br>Engaged with the community through discussions, content sharing, and feedback collection.<br>Helped new members understand project fundamentals and use cases through simplified explanations and guides.</p>
+                            <h2 class="typewriter" data-type="Simple Chain" data-speed="8"></h2>
+                            <p class="project-role">Community Contributor & Content Creator</p>
+                            <p class="project-description typewriter" data-type="Researched and created educational content about Real World Assets (RWA) and SimpleChain's ecosystem. Engaged with the community through discussions, content sharing, and feedback collection. Helped new members understand project fundamentals and use cases through simplified explanations and guides." data-speed="8"></p>
                         </div>
                         <div class="project-image">
                             <img src="assets/images/project-4.png" alt="Simple Chain">
                         </div>
                     </article>
 
-                    <article class="project-card reveal" id="nirvana">
+                    <article class="project-card reveal-item" id="nirvana">
                         <div class="project-image">
                             <img src="assets/images/project-5.png" alt="Nirvana">
                         </div>
                         <div class="project-info">
-                            <h2>Nirvana — Solana Scholarship Project by Mancer × Superteam Indonesia</h2>
-                            <p class="project-role">Business Development &amp; Community Builder</p>
-                            <p class="project-description">Conducted user research and collected feedback to validate product ideas.<br>Engaged with potential users and community members through outreach, discussions, and product testing.<br>Created educational content and guided early users to support adoption of Nirvana’s token vesting solution on Solana.</p>
+                            <h2 class="typewriter" data-type="Nirvana — Solana Scholarship Project by Mancer × Superteam Indonesia" data-speed="8"></h2>
+                            <p class="project-role">Business Development & Community Builder</p>
+                            <p class="project-description typewriter" data-type="Conducted user research and collected feedback to validate product ideas. Engaged with potential users and community members through outreach, discussions, and product testing. Created educational content and guided early users to support adoption of Nirvana's token vesting solution on Solana." data-speed="8"></p>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <footer class="footer">
+        <footer class="footer reveal-block">
             <div class="footer-content">
-                <a href="https://github.com/mdewi2590-collab" class="footer-link">github https://github.com/mdewi2590-collab</a>
-                <a href="https://x.com/HanumD3e" class="footer-link">x https://x.com/HanumD3e</a>
+                <a href="https://x.com/HanumD3e" class="footer-icon" target="_blank" rel="noopener" title="X">
+                    <img src="assets/icons/x.svg" alt="X" class="footer-img">
+                </a>
+                <a href="https://t.me/HanumRockerD" class="footer-icon" target="_blank" rel="noopener" title="Telegram">
+                    <img src="assets/icons/telegram.svg" alt="Telegram" class="footer-img">
+                </a>
+                <a href="mailto:mdewi2590@gmail.com" class="footer-icon" title="Email">
+                    <img src="assets/icons/gmail.svg" alt="Email" class="footer-img">
+                </a>
+                <a href="https://discord.com/users/your_discord_id" class="footer-icon" target="_blank" rel="noopener" title="Discord">
+                    <img src="assets/icons/discord.svg" alt="Discord" class="footer-img">
+                </a>
+                <a href="https://github.com/mdewi2590-collab" class="footer-icon" target="_blank" rel="noopener" title="GitHub">
+                    <img src="assets/logos/github-logo/GitHub Logos/SVG/GitHub_Invertocat_White.svg" alt="GitHub" class="footer-img">
+                </a>
             </div>
         </footer>
     </main>

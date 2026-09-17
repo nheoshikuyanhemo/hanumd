@@ -13,58 +13,119 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/images/profile.jpg" alt="Mega asd/ Hanumd" class="logo-img">
+                <img src="assets/images/profile.jpg" alt="HanumD / Mdewi" class="logo-img">
             </a>
             <ul class="nav-links">
                 <li><a href="about.html">Learn More</a></li>
                 <li><a href="projects.html">View Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button class="menu-trigger" id="menuTrigger" aria-label="Open menu">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </button>
         </div>
     </nav>
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+    <aside class="menu-panel" id="menuPanel" role="dialog" aria-label="Menu">
+        <div class="menu-panel__head">
+            <h2 class="menu-panel__title" data-i18n="menu.title">// HANUMD / MDEWI</h2>
+            <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="menu-contents">
+            <li>
+                <a href="index.html">
+                    <span class="mc-title" data-i18n="menu.home">Home</span>
+                    <span class="mc-desc" data-i18n="menu.home.desc">Landing — banner, tagline & core features.</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <span class="mc-title" data-i18n="menu.about">About</span>
+                    <span class="mc-desc" data-i18n="menu.about.desc">Vision, experience & ecosystem links.</span>
+                </a>
+            </li>
+            <li>
+                <a href="projects.html">
+                    <span class="mc-title" data-i18n="menu.projects">Projects</span>
+                    <span class="mc-desc" data-i18n="menu.projects.desc">Community experience & contributions.</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <span class="mc-title" data-i18n="menu.contact">Contact</span>
+                    <span class="mc-desc" data-i18n="menu.contact.desc">Get in touch via X, Telegram, Email, Discord.</span>
+                </a>
+            </li>
+        </ul>
+        <div class="menu-socials">
+            <span class="menu-socials__label">Social media</span>
+            <a href="https://x.com/HanumD3e" target="_blank" rel="noopener">X</a>
+            <a href="https://t.me/HanumRockerD" target="_blank" rel="noopener">Telegram</a>
+            <a href="mailto:mdewi2590@gmail.com">Email</a>
+            <a href="https://discord.com/users/your_discord_id" target="_blank" rel="noopener">Discord</a>
+            <a href="https://github.com/mdewi2590-collab" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="menu-lang-switch">
+            <select id="langSelect" aria-label="Language">
+                <option value="en">English</option>
+                <option value="id">Indonesian</option>
+            </select>
+        </div>
+    </aside>
 
     <main>
-        <section class="contact-page">
+        <section class="contact-page reveal-block">
             <div class="container">
-                <div class="contact-info reveal">
-                    <p class="section-tag">Contact me</p>
-                    <h1 class="contact-title">Contact me</h1>
+                <div class="contact-info reveal-item">
+                    <p class="section-tag reveal-item typewriter" data-type="Contact me" data-speed="8"></p>
+                    <h1 class="contact-title reveal-item typewriter" data-type="Contact me" data-speed="8"></h1>
                 </div>
-                
-                <!-- Banner Section -->
-                <div class="banner-section">
-                    <img src="assets/banner/banner_discord.png" alt="Contact Banner" class="banner-image">
-                </div>
-                
-                <div class="contact-list reveal">
-                    <!-- X (Twitter) -->
-                    <a href="https://x.com/HanumD3e" class="social-link">
+
+                <div class="contact-list reveal-item">
+                    <a href="https://x.com/HanumD3e" class="social-link" title="X">
                         <img src="assets/icons/x.svg" alt="X" class="social-icon">
                         <span>X</span>
                     </a>
-                    <!-- Telegram -->
-                    <a href="https://t.me/HanumRockerD" class="social-link">
+                    <a href="https://t.me/HanumRockerD" class="social-link" title="Telegram">
                         <img src="assets/icons/telegram.svg" alt="Telegram" class="social-icon">
                         <span>Telegram</span>
                     </a>
-                    <!-- Email -->
-                    <a href="mailto:mdewi2590@gmail.com" class="social-link">
+                    <a href="mailto:mdewi2590@gmail.com" class="social-link" title="Email">
                         <img src="assets/icons/gmail.svg" alt="Email" class="social-icon">
                         <span>Email</span>
                     </a>
-                    <!-- Discord -->
-                    <a href="https://discord.com/users/your_discord_id" class="social-link">
+                    <a href="https://discord.com/users/your_discord_id" class="social-link" title="Discord">
                         <img src="assets/icons/discord.svg" alt="Discord" class="social-icon">
                         <span>Discord</span>
+                    </a>
+                    <a href="https://github.com/mdewi2590-collab" class="social-link" title="GitHub">
+                        <img src="assets/logos/github-logo/GitHub Logos/SVG/GitHub_Invertocat_White.svg" alt="GitHub" class="social-icon">
+                        <span>GitHub</span>
                     </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer reveal-block">
         <div class="footer-content">
-            <img src="assets/logos/github-logo/github-logo.svg" alt="GitHub" class="footer-logo">
+            <a href="https://x.com/HanumD3e" class="footer-icon" target="_blank" rel="noopener" title="X">
+                <img src="assets/icons/x.svg" alt="X" class="footer-img">
+            </a>
+            <a href="https://t.me/HanumRockerD" class="footer-icon" target="_blank" rel="noopener" title="Telegram">
+                <img src="assets/icons/telegram.svg" alt="Telegram" class="footer-img">
+            </a>
+            <a href="mailto:mdewi2590@gmail.com" class="footer-icon" title="Email">
+                <img src="assets/icons/gmail.svg" alt="Email" class="footer-img">
+            </a>
+            <a href="https://discord.com/users/your_discord_id" class="footer-icon" target="_blank" rel="noopener" title="Discord">
+                <img src="assets/icons/discord.svg" alt="Discord" class="footer-img">
+            </a>
+            <a href="https://github.com/mdewi2590-collab" class="footer-icon" target="_blank" rel="noopener" title="GitHub">
+                <img src="assets/logos/github-logo/GitHub Logos/SVG/GitHub_Invertocat_White.svg" alt="GitHub" class="footer-img">
+            </a>
         </div>
     </footer>
 

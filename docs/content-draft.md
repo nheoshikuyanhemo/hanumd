@@ -34,6 +34,22 @@ Created and shared educational content to increase awareness about privacy and o
 Engaged with community members through discussions, Q&A, and feedback collection.
 Helped onboard new members by explaining project concepts and guiding them with useful resources.
 
+ABOUT ME
+
+KEY ACHIEVEMENT 
+
+Awardee Solana scholarship mancer support by Superteam Indonesia 
+Awardee Solana scholarship support by Shefi
+ Conducted 30+ user interviews for product validation.
+ Acquired 3 pilot users through community outreach.
+ Hosted Web3 community events at Optimum.
+ Delivered design workshops for the Ablo community.
+ Published educational Web3 content across Twitter/X
+
+CERTIFICATION 
+
+Solana Scholarship Awardee Mancer × Superteam Indonesia | 2026 Successfully completed a 10-week scholarship focused on the Solana ecosystem, startup building, and Web3 product development. Collaborated in a cross-functional team to build Nirvana, a token vesting solution on Solana. Specialized in Business Development, including user research, market validation, product testing, and pilot user acquisition.
+ Solana Scholarship Awardee SheFi | Global | 2026 Selected as a Solana Scholarship Awardee through SheFi, a global Web3 education program. Completed an 8-week program covering Web3 fundamentals, blockchain technology, the Solana ecosystem, DeFi, wallets, and decentralized applications. Engaged with a diverse global community of Web3 learners and builders, developing strong communication, networking, and community engagement skills
 
 Simple Chain
 Community Contributor & Content Creator
