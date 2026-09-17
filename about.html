@@ -19,9 +19,9 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <button class="menu-trigger" id="menuTrigger" aria-label="Open menu">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
         </div>
     </nav>
@@ -34,36 +34,61 @@
         <ul class="menu-contents">
             <li>
                 <a href="index.html">
-                    <span class="mc-title" data-i18n="menu.home">Home</span>
-                    <span class="mc-desc" data-i18n="menu.home.desc">Landing — banner, tagline & core features.</span>
+                    <span class="mc-title" data-i18n="menu.home" data-menu-text="Home">Home</span>
+                    <span class="mc-desc" data-i18n="menu.home.desc" data-menu-text="Landing — banner, tagline & core features.">Landing — banner, tagline & core features.</span>
                 </a>
             </li>
             <li>
                 <a href="about.html">
-                    <span class="mc-title" data-i18n="menu.about">About</span>
-                    <span class="mc-desc" data-i18n="menu.about.desc">Vision, experience & ecosystem links.</span>
+                    <span class="mc-title" data-i18n="menu.about" data-menu-text="About">About</span>
+                    <span class="mc-desc" data-i18n="menu.about.desc" data-menu-text="Vision, experience & ecosystem links.">Vision, experience & ecosystem links.</span>
                 </a>
             </li>
             <li>
                 <a href="projects.html">
-                    <span class="mc-title" data-i18n="menu.projects">Projects</span>
-                    <span class="mc-desc" data-i18n="menu.projects.desc">Community experience & contributions.</span>
+                    <span class="mc-title" data-i18n="menu.projects" data-menu-text="Projects">Projects</span>
+                    <span class="mc-desc" data-i18n="menu.projects.desc" data-menu-text="Community experience & contributions.">Community experience & contributions.</span>
                 </a>
             </li>
             <li>
                 <a href="contact.html">
-                    <span class="mc-title" data-i18n="menu.contact">Contact</span>
-                    <span class="mc-desc" data-i18n="menu.contact.desc">Get in touch via X, Telegram, Email, Discord.</span>
+                    <span class="mc-title" data-i18n="menu.contact" data-menu-text="Contact">Contact</span>
+                    <span class="mc-desc" data-i18n="menu.contact.desc" data-menu-text="Get in touch via X, Telegram, Email, Discord.">Get in touch via X, Telegram, Email, Discord.</span>
                 </a>
             </li>
         </ul>
         <div class="menu-socials">
             <span class="menu-socials__label">Social media</span>
-            <a href="https://x.com/HanumD3e" target="_blank" rel="noopener">X</a>
-            <a href="https://t.me/HanumRockerD" target="_blank" rel="noopener">Telegram</a>
-            <a href="mailto:mdewi2590@gmail.com">Email</a>
-            <a href="https://discord.com/users/your_discord_id" target="_blank" rel="noopener">Discord</a>
-            <a href="https://github.com/mdewi2590-collab" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://x.com/HanumD3e" target="_blank" rel="noopener">
+                <img src="assets/icons/x.svg" alt="X" class="menu-social-icon">
+                <span class="menu-social-title" data-menu-text="X">X</span>
+                <span class="menu-social-desc" data-menu-text="Follow @HanumD3e">Follow @HanumD3e</span>
+            </a>
+            <a href="https://t.me/HanumRockerD" target="_blank" rel="noopener">
+                <img src="assets/icons/telegram.svg" alt="Telegram" class="menu-social-icon">
+                <span class="menu-social-title" data-menu-text="Telegram">Telegram</span>
+                <span class="menu-social-desc" data-menu-text="Join @HanumRockerD">Join @HanumRockerD</span>
+            </a>
+            <a href="mailto:mdewi2590@gmail.com">
+                <img src="assets/icons/gmail.svg" alt="Email" class="menu-social-icon">
+                <span class="menu-social-title" data-menu-text="Email">Email</span>
+                <span class="menu-social-desc" data-menu-text="mdewi2590@gmail.com">mdewi2590@gmail.com</span>
+            </a>
+            <a href="https://discord.com/users/your_discord_id" target="_blank" rel="noopener">
+                <img src="assets/icons/discord.svg" alt="Discord" class="menu-social-icon">
+                <span class="menu-social-title" data-menu-text="Discord">Discord</span>
+                <span class="menu-social-desc" data-menu-text="Join the community">Join the community</span>
+            </a>
+            <a href="https://github.com/mdewi2590-collab" target="_blank" rel="noopener">
+                <img src="assets/icons/github.svg" alt="GitHub" class="menu-social-icon">
+                <span class="menu-social-title" data-menu-text="GitHub">GitHub</span>
+                <span class="menu-social-desc" data-menu-text="View the portfolio source">View the portfolio source</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mega-asmara-dewi-223497419" target="_blank" rel="noopener">
+                <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="menu-social-icon">
+                <span class="menu-social-title" data-menu-text="LinkedIn">LinkedIn</span>
+                <span class="menu-social-desc" data-menu-text="Mega Asmara Dewi">Mega Asmara Dewi</span>
+            </a>
         </div>
         <div class="menu-lang-switch">
             <select id="langSelect" aria-label="Language">
@@ -141,12 +166,13 @@
                     <img src="assets/icons/discord.svg" alt="Discord" class="footer-img">
                 </a>
                 <a href="https://github.com/mdewi2590-collab" class="footer-icon" target="_blank" rel="noopener" title="GitHub">
-                    <img src="assets/logos/github-logo/GitHub Logos/SVG/GitHub_Invertocat_White.svg" alt="GitHub" class="footer-img">
+                    <img src="assets/icons/github.svg" alt="GitHub" class="footer-img">
                 </a>
-                <a href="https://www.linkedin.com/in/mega-asmara-dewi-223497419" class="footer-icon" target="_blank" rel="noopener" title="LinkedIn — https://www.linkedin.com/in/mega-asmara-dewi-223497419">
+                <a href="https://www.linkedin.com/in/mega-asmara-dewi-223497419" class="footer-icon" target="_blank" rel="noopener" title="LinkedIn">
                     <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="footer-img">
                 </a>
             </div>
+            <p class="copyright">© 2026 <a href="https://x.com/eixaid" target="_blank" rel="noopener noreferrer">0xEixa</a>. All rights reserved.</p>
         </footer>
     </main>
 
