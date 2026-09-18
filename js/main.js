@@ -124,10 +124,32 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuBackdrop = document.getElementById('menuBackdrop');
     const menuClose = document.getElementById('menuClose');
 
+    function typeMenuItems() {
+        document.querySelectorAll('.menu-item-title').forEach(function(element) {
+            const text = element.dataset.text || element.textContent;
+            typeText(element, text, 25);
+        });
+    }
+
+    function typeText(element, text, speed) {
+        if (element._typeTimer) window.clearTimeout(element._typeTimer);
+        element.textContent = '';
+        let index = 0;
+        (function type() {
+            if (index < text.length) {
+                element.textContent += text.charAt(index++);
+                element._typeTimer = window.setTimeout(type, speed);
+            } else {
+                element._typeTimer = null;
+            }
+        })();
+    }
+
     function openMenu() {
         if (menuTrigger) menuTrigger.classList.add('open');
         if (menuPanel) menuPanel.classList.add('open');
         if (menuBackdrop) menuBackdrop.classList.add('open');
+        typeMenuItems();
     }
 
     function closeMenu() {
@@ -142,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') closeMenu();
     });
-    document.querySelectorAll('.menu-contents a').forEach(function(link) {
+    document.querySelectorAll('.menu-contents a, .menu-item-link').forEach(function(link) {
         link.addEventListener('click', closeMenu);
     });
 

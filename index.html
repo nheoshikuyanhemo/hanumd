@@ -32,64 +32,96 @@
             <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
         </div>
         <ul class="menu-contents">
-            <li>
-                <a href="index.html">
-                    <span class="mc-title" data-i18n="menu.home" data-menu-text="Home">Home</span>
-                    <span class="mc-desc" data-i18n="menu.home.desc" data-menu-text="Landing — banner, tagline & core features.">Landing — banner, tagline & core features.</span>
+            <li class="menu-item">
+                <a href="index.html" class="menu-item-link">
+                    <span class="menu-item-copy">
+                        <span class="menu-item-title" data-text="Home">Home</span>
+                        <span class="menu-item-preview" data-text="Landing — banner, tagline &amp; core features.">Landing — banner, tagline &amp; core features.</span>
+                    </span>
                 </a>
             </li>
-            <li>
-                <a href="about.html">
-                    <span class="mc-title" data-i18n="menu.about" data-menu-text="About">About</span>
-                    <span class="mc-desc" data-i18n="menu.about.desc" data-menu-text="Vision, experience & ecosystem links.">Vision, experience & ecosystem links.</span>
+            <li class="menu-item">
+                <a href="about.html" class="menu-item-link">
+                    <span class="menu-item-copy">
+                        <span class="menu-item-title" data-text="About">About</span>
+                        <span class="menu-item-preview" data-text="Vision, experience &amp; ecosystem links.">Vision, experience &amp; ecosystem links.</span>
+                    </span>
                 </a>
             </li>
-            <li>
-                <a href="projects.html">
-                    <span class="mc-title" data-i18n="menu.projects" data-menu-text="Projects">Projects</span>
-                    <span class="mc-desc" data-i18n="menu.projects.desc" data-menu-text="Community experience & contributions.">Community experience & contributions.</span>
+            <li class="menu-item">
+                <a href="projects.html" class="menu-item-link">
+                    <span class="menu-item-copy">
+                        <span class="menu-item-title" data-text="Projects">Projects</span>
+                        <span class="menu-item-preview" data-text="Community experience &amp; contributions.">Community experience &amp; contributions.</span>
+                    </span>
                 </a>
             </li>
-            <li>
-                <a href="contact.html">
-                    <span class="mc-title" data-i18n="menu.contact" data-menu-text="Contact">Contact</span>
-                    <span class="mc-desc" data-i18n="menu.contact.desc" data-menu-text="Get in touch via X, Telegram, Email, Discord.">Get in touch via X, Telegram, Email, Discord.</span>
+            <li class="menu-item">
+                <a href="contact.html" class="menu-item-link">
+                    <span class="menu-item-copy">
+                        <span class="menu-item-title" data-text="Contact">Contact</span>
+                        <span class="menu-item-preview" data-text="Get in touch via X, Telegram, Email, Discord.">Get in touch via X, Telegram, Email, Discord.</span>
+                    </span>
                 </a>
             </li>
         </ul>
-        <div class="menu-socials">
-            <span class="menu-socials__label">Social media</span>
-            <a href="https://x.com/HanumD3e" target="_blank" rel="noopener">
-                <img src="assets/icons/x.svg" alt="X" class="menu-social-icon">
-                <span class="menu-social-title" data-menu-text="X">X</span>
-                <span class="menu-social-desc" data-menu-text="Follow @HanumD3e">Follow @HanumD3e</span>
-            </a>
-            <a href="https://t.me/HanumRockerD" target="_blank" rel="noopener">
-                <img src="assets/icons/telegram.svg" alt="Telegram" class="menu-social-icon">
-                <span class="menu-social-title" data-menu-text="Telegram">Telegram</span>
-                <span class="menu-social-desc" data-menu-text="Join @HanumRockerD">Join @HanumRockerD</span>
-            </a>
-            <a href="mailto:mdewi2590@gmail.com">
-                <img src="assets/icons/gmail.svg" alt="Email" class="menu-social-icon">
-                <span class="menu-social-title" data-menu-text="Email">Email</span>
-                <span class="menu-social-desc" data-menu-text="mdewi2590@gmail.com">mdewi2590@gmail.com</span>
-            </a>
-            <a href="https://discord.com/users/your_discord_id" target="_blank" rel="noopener">
-                <img src="assets/icons/discord.svg" alt="Discord" class="menu-social-icon">
-                <span class="menu-social-title" data-menu-text="Discord">Discord</span>
-                <span class="menu-social-desc" data-menu-text="Join the community">Join the community</span>
-            </a>
-            <a href="https://github.com/mdewi2590-collab" target="_blank" rel="noopener">
-                <img src="assets/icons/github.svg" alt="GitHub" class="menu-social-icon">
-                <span class="menu-social-title" data-menu-text="GitHub">GitHub</span>
-                <span class="menu-social-desc" data-menu-text="View the portfolio source">View the portfolio source</span>
-            </a>
-            <a href="https://www.linkedin.com/in/mega-asmara-dewi-223497419" target="_blank" rel="noopener">
-                <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="menu-social-icon">
-                <span class="menu-social-title" data-menu-text="LinkedIn">LinkedIn</span>
-                <span class="menu-social-desc" data-menu-text="Mega Asmara Dewi">Mega Asmara Dewi</span>
-            </a>
-        </div>
+        <ul class="menu menu-socials" aria-label="Social media">
+            <li class="menu-label">Social media</li>
+            <li class="menu-item">
+                <a class="menu-item-link" href="https://x.com/HanumD3e" target="_blank" rel="noopener">
+                    <img src="assets/icons/x.svg" alt="X" class="menu-item-icon">
+                    <span class="menu-item-copy">
+                        <span class="menu-item-title" data-text="X">X</span>
+                        <span class="menu-item-preview" data-text="HanumD3e">HanumD3e</span>
+                    </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-item-link" href="https://t.me/HanumRockerD" target="_blank" rel="noopener">
+                    <img src="assets/icons/telegram.svg" alt="Telegram" class="menu-item-icon">
+                    <span class="menu-item-copy">
+                        <span class="menu-item-title" data-text="Telegram">Telegram</span>
+                        <span class="menu-item-preview" data-text="HanumRockerD">HanumRockerD</span>
+                    </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-item-link" href="mailto:mdewi2590@gmail.com">
+                    <img src="assets/icons/gmail.svg" alt="Email" class="menu-item-icon">
+                    <span class="menu-item-copy">
+                        <span class="menu-item-title" data-text="Email">Email</span>
+                        <span class="menu-item-preview" data-text="mdewi2590@gmail.com">mdewi2590@gmail.com</span>
+                    </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-item-link" href="https://discordapp.com/users/1400809156725964801" target="_blank" rel="noopener">
+                    <img src="assets/icons/discord.svg" alt="Discord" class="menu-item-icon">
+                    <span class="menu-item-copy">
+                        <span class="menu-item-title" data-text="Discord">Discord</span>
+                        <span class="menu-item-preview" data-text="Send message">Send message</span>
+                    </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-item-link" href="https://github.com/mdewi2590-collab" target="_blank" rel="noopener">
+                    <img src="assets/icons/github.svg" alt="GitHub" class="menu-item-icon">
+                    <span class="menu-item-copy">
+                        <span class="menu-item-title" data-text="GitHub">GitHub</span>
+                        <span class="menu-item-preview" data-text="Portfolio source">Portfolio source</span>
+                    </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-item-link" href="https://www.linkedin.com/in/mega-asmara-dewi-223497419" target="_blank" rel="noopener">
+                    <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="menu-item-icon">
+                    <span class="menu-item-copy">
+                        <span class="menu-item-title" data-text="LinkedIn">LinkedIn</span>
+                        <span class="menu-item-preview" data-text="Mega Asmara Dewi">Mega Asmara Dewi</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
         <div class="menu-lang-switch">
             <select id="langSelect" aria-label="Language">
                 <option value="en">English</option>
@@ -220,7 +252,7 @@
                 <a href="mailto:mdewi2590@gmail.com" class="footer-icon" title="Email">
                     <img src="assets/icons/gmail.svg" alt="Email" class="footer-img">
                 </a>
-                <a href="https://discord.com/users/your_discord_id" class="footer-icon" target="_blank" rel="noopener noreferrer" title="Discord">
+                <a href="https://discordapp.com/users/1400809156725964801" class="footer-icon" target="_blank" rel="noopener noreferrer" title="Discord">
                     <img src="assets/icons/discord.svg" alt="Discord" class="footer-img">
                 </a>
                 <a href="https://github.com/mdewi2590-collab" class="footer-icon" target="_blank" rel="noopener noreferrer" title="GitHub">
