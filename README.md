@@ -52,7 +52,6 @@ hanumd/
 - **Typewriter effect** — sequential character reveal on headings/paragraphs via `data-type` + `data-speed`.
 - **Scroll reveal** — `.reveal-block` / `.reveal-item` animated via `IntersectionObserver`.
 - **Contact icons** — inline SVGs with `filter: brightness(0) invert(1)` for white-on-dark.
-- **Discord deep link** — `https://discordapp.com/users/1400809156725964801` (label: "Send message").
 - **Responsive** — breakpoints at 1024px, 800px, 520px; nav height, gutter, section spacing adapt via CSS variables.
 
 ## Color Palette (exact)
